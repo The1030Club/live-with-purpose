@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Classes</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container-two" id="top">
+	<div class="top-bar">
+		<img src="images/LwP-Logo.png" alt="Live with Purpose">
+		<a href="index.html"><img class="home-button" src="images/home-button.png" alt="Home"></a>
+	</div>
+	<h1>"Scope this out, this is some REAL shit..."</h1>
+	<nav class="menu-bar">
+		<ul class="menu-item">
+			<li><a href="contact.html">Contact</li></a>
+			<li><a href="instructors.html">Instructors</a></li>
+			<li><a href="schedule.html">Schedule</a></li>
+			<li><a href="classes.html">Classes</a></li>
+		</ul>
+	</nav>
+</div>
+
+<section>
+	<div class="container-classes grouptext" id="group">
+		<article>
+			<h1>Group Classes</h1>
+			<p>Group classes are limited to six participants, and meet twice a week at Streets Fitness or outside weather permitting in Louisville. No membership to Streets required.</p>
+		</article>
+	</div>
+	<div class="container-classes private" id="private">
+		<article>
+			<h1>Private Instruction</h1>
+			<p>Want to work on start an exercise program, work on specific goals, train for a race or start cross-fit, but don't know where to begin? Our individualized training and coaching plans will get you there. You tell us where you want to go, we design the plan and give you tools to get there. Private instruction is for anyone who prefers to work at their pace with 100% focus on their needs. Let us help you start an exercise routine for the first time, increase your level of overall fitness, rehabilitate after injury or surgery, or prepare for your first or next race.</p>
+		</article>
+	</div>
+	<div class="container-classes nutrition">
+		<article>
+			<h1 id="nutrition">Nutrition</h1>
+			<p>Add nutrition coaching to private instruction and hit your weight, endurance or overall wellness goals faster. We provide guidance on the best foods to incorporate into your active lifestyle, as well as recommended calorie intake and recipes to get you going.</p>
+		</article>
+	</div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				  $('html,body').animate({
+				  scrollTop: target.offset().top
+				  }, 1000);
+			  return false;
+		  }
+	  }
+  });
+});
+</script>
+
+</body>
+</html>
